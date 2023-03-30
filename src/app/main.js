@@ -76,9 +76,9 @@ async function onEntry(entries) {
       if (
         entry.isIntersecting &&
         pixabay.query !== '' &&
-        refs.gallery.childElementCount !== 0
+        refs.gallery.childElementCount >= 40
       ) {
-        pixabay.incrementPage();
+         pixabay.incrementPage();
 
         const { hits } = await pixabay.getImages();
         const markup = createMarkupImg(hits);
