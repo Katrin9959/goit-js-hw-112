@@ -5,7 +5,7 @@ const BASE_URL = 'https://pixabay.com/api/';
 export class PixabayApiImages {
   constructor() {
     this.searchQuery = '';
-    this.page = 1;
+    this.page = 0;
     this.per_page = 40;
     this.totalPages = 0;
   }
