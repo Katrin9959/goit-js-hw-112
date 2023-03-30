@@ -117,3 +117,4 @@ function smoothScroll() {
     behavior: 'smooth',
   });
 }
+
